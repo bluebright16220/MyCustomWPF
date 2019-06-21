@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="MyWPF.Phone.BasicNumberPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyWPF.Phone"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             FontSize="20"
+             >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnDigit_1" Grid.Row="0" Grid.Column="0" Click="BtnDigit_Click">1</Button>
+        <Button x:Name="btnDigit_2" Grid.Row="0" Grid.Column="1" Click="BtnDigit_Click">2</Button>
+        <Button x:Name="btnDigit_3" Grid.Row="0" Grid.Column="2" Click="BtnDigit_Click">3</Button>
+        <Button x:Name="btnDigit_4" Grid.Row="1" Grid.Column="0" Click="BtnDigit_Click">4</Button>
+        <Button x:Name="btnDigit_5" Grid.Row="1" Grid.Column="1" Click="BtnDigit_Click">5</Button>
+        <Button x:Name="btnDigit_6" Grid.Row="1" Grid.Column="2" Click="BtnDigit_Click">6</Button>
+        <Button x:Name="btnDigit_7" Grid.Row="2" Grid.Column="0" Click="BtnDigit_Click">7</Button>
+        <Button x:Name="btnDigit_8" Grid.Row="2" Grid.Column="1" Click="BtnDigit_Click">8</Button>
+        <Button x:Name="btnDigit_9" Grid.Row="2" Grid.Column="2" Click="BtnDigit_Click">9</Button>
+        <Button x:Name="btnDigit_asterisk" Grid.Row="3" Grid.Column="0" Click="BtnDigit_Click">*</Button>
+        <Button x:Name="btnDigit_0" Grid.Row="3" Grid.Column="1" Click="BtnDigit_Click">0</Button>
+        <Button x:Name="btnDigit_pound" Grid.Row="3" Grid.Column="2" Click="BtnDigit_Click">#</Button>
+    </Grid>
+
+</UserControl>
